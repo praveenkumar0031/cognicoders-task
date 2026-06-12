@@ -1,0 +1,13 @@
+{
+  "name": "employee-leave-management-system",
+  "version": "1.0.0",
+  "description": "A RESTful API for Employee Leave Management System",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "uuid": "^9.0.1"
+  }
+}
