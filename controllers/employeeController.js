@@ -1,9 +1,8 @@
 const employeeService = require('../services/employeeService');
 const { validateEmployee } = require('../validations/employeeValidation');
 
-/**
- * Creates a new employee
- */
+
+ //Creates a new employee
 const createEmployee = (req, res, next) => {
   try {
     const error = validateEmployee(req.body);
@@ -25,9 +24,8 @@ const createEmployee = (req, res, next) => {
   }
 };
 
-/**
- * Gets all employees
- */
+
+// Gets all employees
 const getAllEmployees = (req, res, next) => {
   try {
     const employees = employeeService.getAllEmployees(req.query);
