@@ -23,13 +23,19 @@ The **Employee Leave Management System** is a robust RESTful API built with **No
 The project follows a modular architecture based on the **Separation of Concerns** principle.
 
 ```text
-project/
-├── app.js              — The main entry point. Configures middleware, routes, and starts the server.
-├── routes/             — Express routers that define the API endpoints and map them to controllers.
-├── controllers/        — Logic layer that handles HTTP requests, extracts parameters, and sends responses.
-├── services/           — Business logic layer. Contains core algorithms like overlap checks and duration calculation.
-├── validations/        — Schema validation logic to ensure incoming data meets requirements.
-├── middleware/         — Functions that run during the request-response cycle (e.g., Error Handling, Logging).
+Cognicoders/
+├── app.js              — The main entry point. Configures middleware, routes, and starts 
+|                          the server.
+├── routes/             — Express routers that define the API endpoints and map them 
+|                         to controllers.
+├── controllers/        — Logic layer that handles HTTP requests, extracts parameters, 
+|                          and sends responses.
+├── services/           — Business logic layer. Contains core algorithms like 
+|                          overlap checks and duration calculation.
+├── validations/        — Schema validation logic to ensure incoming data
+|                          meets requirements.
+├── middleware/         — Functions that run during the request-response cycle 
+|                         (e.g.,   Error Handling, Logging).
 ├── data/               — The data persistence layer (in-memory store for this project).
 └── package.json        — Project metadata, scripts, and dependencies.
 ```
